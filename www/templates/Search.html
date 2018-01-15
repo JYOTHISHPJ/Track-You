@@ -1,0 +1,20 @@
+<ion-view view-title="TRACK YOU">
+  <ion-content style="background:black;" >
+
+<div style="padding-top:15%;"></div>
+    <div class="centeralign1">
+      <div class="centeralign2">
+
+        <input type="number" limit-to="10" ng-maxlength="10" class="text-center inputMiddle" ng-required="true" style="color:white;font-size:20px" placeholder="Tracking Code" ng-model="TrackId" >
+
+      </div>
+    </div>
+    <div style="padding-top:15%;"></div>
+    <div class="centeralign1">
+      <div class="centeralign2">
+        <button id="singlebutton" style="color:white; !important" name="singlebutton" class="Trkbutton" ng-click="TrackIt(TrackId)">Track It</button>
+      </div>
+
+    </div>
+    </ion-content>
+  </ion-view>

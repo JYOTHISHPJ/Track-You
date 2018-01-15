@@ -1,0 +1,62 @@
+<ion-view view-title="TRACK YOU">
+  <ion-content style="background:black" >
+
+    <div style="padding-top:15%;">
+    <div class="row">
+      <div class="col col-4 text-right" ><input  ng-model="details.Userid" style="color:white !important" class="text-center inputMiddle"  disabled/></div>
+      <div class="col col-4 col-center">
+
+        <input placeholder="Text Input" class="text-center inputMiddle" style="color:white !important" ng-model="TrackDetail.Trackid" />
+      </div>
+    </div>
+    </div>
+    <br/><br>
+    <br/>
+    <div class="centeralign1">
+      <div class="centeralign2">
+      <button id="singlebutton" name="singlebutton" class="Trkbutton" ng-click="UpdateTrackDetails(details.Userid,TrackDetail.Trackid)" style="color:white; !important">Update</button>
+    </div>
+   <br/><br>
+      </div>
+
+    <div class="centeralign1">
+      <div class="centeralign2">
+        <button id="WhatattsappBtn" name="WhatattsappBtn" class="Trkbutton" ng-click="WhatattsappShare(details.Userid,TrackDetail.Trackid)" style="color:white; !important"> Share Tracking Code</button>
+      </div>
+
+    </div>
+    <br/><br>
+  <!--  <div class="centeralign1">
+      <div class="centeralign2">
+        <button id="TrackerBtn" name="TrkBtn" class="Trkbutton" ng-click="TrackerOn()" style="color:white; !important"> Tracking ON</button>
+      </div>
+
+    </div>-->
+
+<br/>
+    <br/>
+
+    <li class="item item-toggle noborder">
+      Self Tracker {{vm.turnClearAppData}}
+      <label class="toggle toggle-assertive">
+        <input type="checkbox" ng-model="vm.turnClearAppData" ng-true-value="'On'" ng-false-value="'Off'"  ng-change="showConfirm(vm.turnClearAppData)">
+        <div class="track">
+          <div class="handle"></div>
+        </div>
+      </label>
+
+
+
+
+ <!--   <li class = "item item-toggle">
+      Toggle Dark
+      <label class = "toggle toggle-dark">
+        <input type = "checkbox" ng-click="TrackerOn($event)"/>
+        <div class = "track">
+          <div class = "handle"></div>
+        </div>
+      </label>
+    </li>-->
+
+  </ion-content>
+</ion-view>

@@ -1,0 +1,29 @@
+  <ion-view view-title="TRACK YOU">
+  <div class="bar bar-header bar-stable">
+    <h1 class="title">TRACK YOU</h1>
+  </div>
+  <ion-content style="background:black" >
+
+    <br/>
+    <br/>
+    <br/>
+    <div class="centeralign1" STYLE="padding-top:20%">
+      <div class="centeralign2">
+          <input type="number" limit-to="10" ng-maxlength="10" class=" inputMiddle" ng-required="true" style="font-size:20px;color:white;" placeholder="Mobile No" ng-model="RegNo" >
+          <br/>
+          <br/>
+          <br/>
+
+          <br/>
+          <input type="text" limit-to="10" ng-maxlength="10" class=" inputMiddle" ng-required="true" style="font-size:20px;color:white" placeholder="Name" ng-model="Name" >
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <button class="button button-block button-calm" id="btnRegister" ng-click="Register(RegNo,Name)" style="background-color: transparent; !important">Register</button>
+
+        </div>
+     </div>
+
+  </ion-content>
+</ion-view>
